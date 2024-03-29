@@ -91,7 +91,7 @@ output_folder = 'tamil_pdf_images_folder'
 pdf_paths = [os.path.join(pdfs_collection_folder, filename) for filename in os.listdir(pdfs_collection_folder) if
              filename.endswith('.pdf')]
 
-# convert_pdf_to_images(pdf_paths, output_folder)
+convert_pdf_to_images(pdf_paths, output_folder)
 
 """ *********************** Cropping function ********************** """
 
@@ -412,7 +412,7 @@ def extract_text_from_voter_list(images_path, output_folder):
 images_path = "tamil_cropped_images"
 output_folder = "tamil_extracted_data"
 
-extract_text_from_voter_list(images_path, output_folder)
+# extract_text_from_voter_list(images_path, output_folder)
 
 
 def extract_data_by_status_new(images_path, output_folder, start_limit):
@@ -682,8 +682,8 @@ def text_extracter(extracted_folder):
     return data_by_subfolder
 
 
-extracted_folder = "tamil_extracted_data"
-data_by_subfolder = text_extracter(extracted_folder)
+# extracted_folder = "tamil_extracted_data"
+# data_by_subfolder = text_extracter(extracted_folder)
 
 """for subfolder, extracted_data_list in data_by_subfolder.items():
     df = pd.DataFrame(extracted_data_list)
